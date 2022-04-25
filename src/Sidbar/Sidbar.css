@@ -1,0 +1,42 @@
+.Sidbar{
+    display: flex;
+    flex-direction: column;
+    flex: .25;
+    background-color: rgb(145, 145, 145);
+    height: 100%;
+}
+.Sidbar_top{
+color: aliceblue;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+background-color: rgb(117, 117, 115);
+border-bottom: solid 3px rgb(41, 41, 41);
+
+}
+.Sidbar_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(114, 113, 111);
+}
+.Sidbar_channelheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(114, 113, 111);
+}
+
+.Sidbar_channels{
+    flex: 1;
+}
+.Sidbar_addchannel{
+    cursor: pointer;
+}
+.Sidbar_addchannel:hover{
+    color: rgb(255, 255, 255);
+}
