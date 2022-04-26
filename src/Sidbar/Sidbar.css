@@ -3,7 +3,7 @@
     flex-direction: column;
     flex: .20;
     background-color: rgb(145, 145, 145);
-    height: 800px;
+    height: 100vh;
 }
 .Sidbar_top{
 color: aliceblue;
