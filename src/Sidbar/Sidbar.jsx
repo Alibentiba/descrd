@@ -43,8 +43,8 @@ const Sidbar = () => {
 
      <FaUserAlt className='avatar_icon'/>
      <div className='Sidbar_profile_text'>
-        <h3>ffkfkkfkkfkkff</h3>
-        <p>ddddd</p>
+        <h3>Test One</h3>
+        <p>Popup</p>
      </div>
 
      <div className='Sidbar_profile_icons'>
