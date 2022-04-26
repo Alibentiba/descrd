@@ -2,7 +2,8 @@
     color: rgb(255, 255, 255);
     background-color: rgb(179, 179, 179);
 }
-.Sidbarchannel >h3{
+.Sidbarchannel h6{
+    /* font-size: 18px; */
     display: flex;
     padding-left: 1px;
     align-items: center;
@@ -11,7 +12,7 @@
     cursor: pointer;
 }
 .Sidbarchannel_hash{
-font-size: 30px;
+font-size: 18px;
 padding: 8px;
 
 

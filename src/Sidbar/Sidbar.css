@@ -1,9 +1,9 @@
 .Sidbar{
     display: flex;
     flex-direction: column;
-    flex: .25;
+    flex: .20;
     background-color: rgb(145, 145, 145);
-    height: 100%;
+    height: 800px;
 }
 .Sidbar_top{
 color: aliceblue;
@@ -40,3 +40,102 @@ border-bottom: solid 3px rgb(41, 41, 41);
 .Sidbar_addchannel:hover{
     color: rgb(255, 255, 255);
 }
+
+
+.Sidbar_voice{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border-top: solid 3px rgb(46, 45, 45);
+    padding: 10px;
+
+}
+.voice_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1px;
+    padding: 10px;
+}
+.voice_text h3 {
+margin: 0;
+/* color: rgb(0, 187, 66); */
+}
+
+.voice_text p {
+    margin: 0;
+   color: rgb(56, 56, 55);
+   font-weight: 600;
+}
+
+.Sidbar_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.Sidbar_voicicon{
+    color: rgb(4, 178, 33);
+    width: 30px;
+    height: 30px;
+}
+
+.info_icon {
+width: 20px;
+height: 20px;
+
+}
+
+
+.Sidbar_profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* gap: 2px; */
+    /* border-top: solid 3px rgb(46, 45, 45); */
+
+    gap: 20px;
+    border-top: solid 3px rgb(46, 45, 45);
+    padding: 10px;
+}
+.Sidbar_profile_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1px;
+    padding: 10px;
+
+
+}
+.Sidbar_profile_text h3 {
+    margin: 0;
+    /* color: greenyellow; */
+    }
+    .Sidbar_profile_text p {
+        margin: 0;
+       color: rgb(56, 56, 55);
+       font-weight: 600;
+    }
+    .Sidbar_profile_icons{
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+    .avatar_icon{
+        width: 35px;
+        height: 25px;
+    }
+
+    .profile_icon{
+        width: 20px;
+height: 20px;
+    }

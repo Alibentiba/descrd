@@ -4,7 +4,7 @@ import './Sidbarchannel.css'
 const Sidbrchannel = ({id,channel}) => {
   return (
     <div className='Sidbarchannel'>
-        <h3><span className='Sidbarchannel_hash'>#Youtub</span></h3>
+        <h6><span className='Sidbarchannel_hash'>#Youtub</span></h6>
         
 
 
