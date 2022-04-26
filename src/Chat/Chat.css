@@ -1,5 +1,9 @@
 .Chat{
     width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .Chat_input{
     display: flex;
@@ -7,9 +11,11 @@
     align-items: center;
     padding: 15px;
     border-radius: 5px;
-    margin: 20px;
+    margin: 10px;
     border-top: 1px solid gray;
     background-color: rgb(161, 161, 161);
+    width: 95%;
+
 }
 .Chat_msg{
     flex: 1;
@@ -23,6 +29,7 @@ outline-width: 0;
 color: beige;
 font-size: large;
 width: 90%;
+height: 4%;
 
 }
 .Chat_input > form{

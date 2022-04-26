@@ -24,6 +24,7 @@ const Chat = () => {
         <input type="text" placeholder={`Messege #Test`} />
         <button className='Chat-buton' type='submit'  >Send Messge</button>
         </form>
+        
         <div className='input_icons'>
        <FaGift className='Chat_icons'/>
        <AiOutlineGif className='Chat_icons'/>
