@@ -17,9 +17,6 @@ const Login = () => {
 <div className='Login-comp'>
         <p className='login-walcom'>Walcom to your Websit .</p>
         <img  src={logo1} alt='logo' className='login-logo'/>
-       <input className='componnet' type="text" placeholder='Email' /> 
-       <input className='componnet' type="Password" placeholder='Password' />  
-       {/* <button className='componnet' onClick={creeuser}>cre acount</button> */}
        <button className='componnet' >Log in</button>
 
        </div>
