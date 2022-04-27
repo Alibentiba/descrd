@@ -1,9 +1,9 @@
 .Sidbar{
     display: flex;
     flex-direction: column;
-    flex: .20;
     background-color: rgb(145, 145, 145);
     height: 100vh;
+    width: 20%;
 }
 .Sidbar_top{
 color: aliceblue;

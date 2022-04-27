@@ -1,10 +1,24 @@
 import React from 'react'
-// import './Messge.css'
+import './Messege.css'
+import { FaRegUserCircle } from "react-icons/fa";
 
 export const Messege = () => {
   return (
     <div className='Messge'>
-        <h1>im messeges</h1>
+     <FaRegUserCircle className='avatar'/>
+
+<div className='massege_info'>
+<h4>
+<span className='messeg_sender'>Ali :</span>
+<p>The  it' can be the bst on messge</p>
+</h4>
+</div>
+
+<span className='time_send'> time_send </span>
+
+
+
+       
     </div>
   )
 }
