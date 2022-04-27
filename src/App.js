@@ -13,11 +13,12 @@ function App() {
 
   useEffect(() => {
 
-    // auth.onAuthStateChanged((authuser) => {
-    //   if (authuser) { dispatch(login({ uid: authuser.uid, photo: authuser.photo, email: authuser.email, displayName: authuser.displayName })) }
-    //   else { dispatch(logout()) }
-    // })
-  }, [])
+    auth.onAuthStateChanged((authuser) => {
+      if (authuser) { dispatch(login({ uid: authuser.uid, photo: authuser.photo, email: authuser.email, displayName: authuser.displayName })) }
+      else { dispatch(logout()) }
+    })
+  }, [dispatch])
+  
 
 
 
