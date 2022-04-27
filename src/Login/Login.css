@@ -36,11 +36,8 @@ font-weight: 600;
 outline: none;
 font:italic 1.2em "Fira Sans", serif;
 padding-left: 8px;
+cursor: pointer;}
 
-
-
-
-}
 .Login-span{
     display: flex;
     flex-direction: row;

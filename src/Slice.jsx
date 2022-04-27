@@ -7,7 +7,7 @@ export const Slic = createSlice({
 login:(state,action)=>{
 state.user=action.payload
 },
-logout:(state,action)=>{
+logout:(state)=>{
     state.user=null
     }
 
@@ -16,5 +16,5 @@ logout:(state,action)=>{
     }
       
 })
-export const { login, logout} = Slic.actions
+export const {login, logout} = Slic.actions
 export default Slic.reducer
