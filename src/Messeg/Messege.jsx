@@ -10,7 +10,7 @@ export const Messege = () => {
 <div className='massege_info'>
 <h4>
 <span className='messeg_sender'>Ali :</span>
-<p>The  it' can be the bst on messge</p>
+<p>The  it' can be the best on messge</p>
 </h4>
 </div>
 

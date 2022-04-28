@@ -3,8 +3,7 @@ import '../Login/Login.css'
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import logo1 from "./logo1.png"
 import { auth,provider } from "../firebaseConfig"
-// import { Provider } from 'react-redux';
-// require('firebase/auth')
+
 const Login = () => {
 
 

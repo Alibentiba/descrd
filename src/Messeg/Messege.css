@@ -1,7 +1,7 @@
 .Messge{
 display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: center;
 justify-content: flex-start;
 /* border: solid 2px rgb(255, 0, 0); */
 gap: 20px;
@@ -9,8 +9,6 @@ margin-left: 10px;
 margin-bottom: 15px;
 margin-top: 10px;
 width: 100%;
-
-
 }
 
 .avatar{
@@ -22,11 +20,18 @@ width: 100%;
 .messeg_sender{
 color: rgb(255, 255, 255);
 }
+.massege_info h4{
+    padding-top: 0;
+    /* border: solid black 3px; */
+}
+
 .massege_info p{
     color: rgb(228, 228, 228);
+    margin-top: 0;
+   
     
 }
 .time_send{
     color: rgb(212, 211, 211);
     font-size:12px;
-font-style: italic;}
+    font-style: italic;}

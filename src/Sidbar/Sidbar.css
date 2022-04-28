@@ -126,8 +126,12 @@ height:  15px;
     }
 
     .avatar_icon{
-        width: 35px;
-        height: 25px;
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+        border-radius: 50px;
+        border: solid blueviolet 2px;
+        cursor: pointer;
        }
 
 
