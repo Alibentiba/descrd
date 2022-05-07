@@ -1,12 +1,13 @@
 import './App.css';
 import Nvabar from './Navbar/Nvabar';
+import Home from "./Home/Home.jsx"
+import { Detail } from './Detail/Detail';
 function App() {
-
-  // const user = useSelector(state => state.userstore.user)
-
   return (
     <div className="App">
      <Nvabar/>
+     <Home/>
+{/* <Detail/> */}
     </div>
   );
 }

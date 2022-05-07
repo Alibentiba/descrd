@@ -1,0 +1,38 @@
+.Viewers{
+display: flex;
+max-width: 90%;
+height: 10%;
+/* border:  solid bisque 2px; */
+align-items: center;
+justify-content: center;
+gap: 4%;
+margin-top:2%;
+margin-left: 2.5%;
+}
+
+
+.Viewers-image{
+width: 10%;
+height: 100%;
+border-radius: 6px;
+cursor: pointer;
+/* border:  solid 2px blueviolet; */
+padding: 0%;
+box-shadow: 6px 2px 42px -22px rgba(255,255,255,1);
+-webkit-box-shadow: 6px 2px 42px -22px rgba(255,255,255,1);
+-moz-box-shadow: 6px 2px 42px -22px rgba(255,255,255,1);
+}
+
+.Viewers-image :hover{
+transform: scale(1.05);
+/* border:solid 2px beige; */
+
+
+}
+
+
+.Viewers-image img {
+width: 100%;
+object-fit: contain;
+
+}
