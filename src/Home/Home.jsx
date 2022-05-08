@@ -3,22 +3,20 @@ import './Home.css'
 import Sliderhome from '../Slider/Slider'
 import Vieweres from '../Viewres/Vieweres'
 import Movies from '../Movies/Movies'
-import { collection, getDocs } from "firebase/firestore";
+
 import db from "../firebaseConfig";
-import axios from "axios";
+import { collection,getDocs,getFirestore } from "firebase/firestore";
+const Home = ()=>{
+const db =getFirestore()
+const colRef= collection(db,'movies')
+getDocs(colRef).then((snap)=>{
+  // console.log("tout les doc sont La ",snap.docs)
+  let newdata=[]
+  snap.docs.forEach((doc)=>{newdata.push({...doc.data(),id:doc.id})})
 
+  console.log('ls donnes sont les suivent ',newdata)
+})
 
-const Home = () => {
-const [movies,setMovies]=useState([])
-useEffect(() => {
-  async function fetchMovies() {
-    const response = await axios.get("https://testdb-436c5-default-rtdb.firebaseio.com/");
-    setMovies(response.data.movies);
-  }
-  fetchMovies();
-}, []);
-
-console.log(movies);
 
   return (
     <div className='Home'>
