@@ -48,7 +48,7 @@ const colRef= collection(db,'movies')
   <Sliderhome/>
   <Vieweres/>
   <Movies/>
-    </div>
+  </div>
   )
 }
 
