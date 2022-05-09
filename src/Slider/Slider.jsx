@@ -21,8 +21,6 @@ const Sliderhome = () => {
       };
 
 
-
-
       return (
         <div className='Slider-1'>
           <Slider {...settings} className='Slider'>

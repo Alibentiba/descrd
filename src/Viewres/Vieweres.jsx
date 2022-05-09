@@ -5,7 +5,18 @@ import viewersdisney from '../images/viewers-disney.png'
 import viewersstarwars from "../images/viewers-starwars.png"
 import viewerspixar from "../images/viewers-pixar.png"
 import "./Viewers.css"
+import {useSelector } from 'react-redux'
+
 const Vieweres = () => {
+
+
+  const Data1= useSelector(state=>state.userstore.movies)
+  console.log("kkkkkkkkkkk",Data1)
+
+
+
+
+
   return (
     <div className='Viewers'>
         <div className='Viewers-image'>

@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
      <Nvabar/>
-     {/* <Home/> */}
-<Detail/>
+     <Home/>
+    <Detail/>
     </div>
   );
 }

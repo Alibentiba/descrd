@@ -3,10 +3,9 @@ export const Slice = createSlice({
     name: "counter",
     initialState: {movies:[]},
     reducers: {
-        addCart: (state, action) => {
-            const newCart = [...state.cart, action.payload]
-            const ss = state.totale + action.payload.price
-            return { ...state, cart: newCart, totale: ss }
+        
+        addmovies: (state, action) => {
+            state.movies=action.payload
         }
 
 
@@ -16,5 +15,5 @@ export const Slice = createSlice({
 
     }
 })
-export const { addCart} = Slic.actions
+export const { addmovies} = Slice.actions
 export default Slice.reducer
