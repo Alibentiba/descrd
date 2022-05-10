@@ -4,11 +4,14 @@ import Caegory from '../Ctegory/Caegory'
 import {useSelector} from 'react-redux'
 // import Caegory from '../Ctegory/Caegory' 
 const Movies = () => {
-  const recommende= useSelector(state=>state.userstore.recommend)
-  const trending= useSelector(state=>state.userstore.trending)
-  const original= useSelector(state=>state.userstore.original)
-  const news= useSelector(state=>state.userstore.news)
+  const mov= useSelector(state=>state.userstore.movies)
+  const recommende= useSelector(state=>state.userstore.recommend).concat(mov);
+  const trending= useSelector(state=>state.userstore.trending).concat(mov);
+  const original= useSelector(state=>state.userstore.original).concat(mov);
+  const news= useSelector(state=>state.userstore.news).concat(mov);
   
+
+ 
 
   return (
    <div className='Movies'>

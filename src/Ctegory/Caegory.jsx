@@ -6,8 +6,8 @@ const Caegory = ({Cat}) => {
 <div className="row">
   {Cat.map((item)=>{
     const {backgroundImg,cardImg,description,id,subTitle,title,titleImg,type}=item;
-  return (<div className="row_posters" key={id}>
-  <img className="row_poster" src={cardImg} alt="ddd"/></div>)})}
+  return (
+  <img className="row_poster" src={cardImg} alt="ddd"/>)})}
   </div>
   )
 }
