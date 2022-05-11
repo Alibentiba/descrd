@@ -1,39 +1,30 @@
-import React from 'react'
+import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import "./Slider.css";
-import sliderbadag from "../images/slider-badag.jpg" 
-import sliderbadging from "../images/slider-badging.jpg" 
+import slider1 from "../images/slider-badag.jpg"
+import "./Slider.css"
 
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 const Sliderhome = () => {
 
-    const settings = {
-        dots: true,
-        fade: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
-
-      };
-
-
-      return (
-        <div className='Slider-1'>
-          <Slider {...settings} className='Slider'>
-            <div className='slider-imag'>
-             <img src={sliderbadag} alt="" />
-            </div>
-            <div className='slider-imag'>
-              <img src={sliderbadging} alt="" />
-            </div>
-            
-          </Slider>
-  </div>
-      );
-}
-
+    return (
+      <Carousel autoPlay='true'>
+          <div>
+              <img src={slider1} />
+          
+          </div>
+          <div>
+              <img src={slider1}  />
+              
+          </div>
+          <div>
+              <img src={slider1}  />
+             
+          </div>
+      </Carousel>
+  );
+  };
+  
 export default Sliderhome

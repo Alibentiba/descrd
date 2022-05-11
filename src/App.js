@@ -1,13 +1,10 @@
 import './App.css';
 import Nvabar from './Navbar/Nvabar';
 import Home from "./Home/Home.jsx"
-// import { Detail } from './Detail/Detail';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import React ,{useEffect} from 'react'
-// import './Home.css'
-// import Sliderhome from '../Slider/Sliderhome'
-// import Sliderhome from '../Slider/Slider'
-// import Vieweres from '../Viewres/Vieweres'
-// import Movies from '../Movies/Movies'
+
 import db from "./firebaseConfig";
 import { addmovies,addrecommend,addtrending, addoriginal, addnews } from './Slice'
 import { collection,getDocs,getFirestore } from "firebase/firestore";
