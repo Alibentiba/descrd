@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 export const Slice = createSlice({
     name: "counter",
-    initialState: {movies:[],recommend:[],trending:[],original:[],news:[]},
+    initialState: {movies:[],recommend:[],trending:[],original:[],news:[],Detaill:[]},
     reducers: {
         
         addmovies: (state, action) => {
@@ -18,6 +18,9 @@ export const Slice = createSlice({
         },
         addnews: (state, action) => {
             state.news=action.payload
+        },
+        addDetaill: (state, action) => {
+            state.Detaill=action.payload
         }
 
 
@@ -27,5 +30,5 @@ export const Slice = createSlice({
 
     }
 })
-export const { addmovies,addrecommend,addtrending, addoriginal, addnews} = Slice.actions
+export const { addmovies,addrecommend,addtrending, addoriginal, addnews,addDetaill} = Slice.actions
 export default Slice.reducer

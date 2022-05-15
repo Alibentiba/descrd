@@ -3,12 +3,15 @@ import Nvabar from './Navbar/Nvabar';
 import Home from "./Home/Home.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { BrowserRouter as Router,Routes , Route } from "react-router-dom";
+
 import React ,{useEffect} from 'react'
 
 import db from "./firebaseConfig";
 import { addmovies,addrecommend,addtrending, addoriginal, addnews } from './Slice'
 import { collection,getDocs,getFirestore } from "firebase/firestore";
 import { useDispatch } from 'react-redux'
+import { Detail } from './Detail/Detail';
 function App() {
   const dispatch =useDispatch()
   const db =getFirestore()
@@ -52,11 +55,16 @@ function App() {
 
 
   return (
-    <div className="App">
-     <Nvabar/>
-     <Home/>
-    {/* <Detail/> */}
+    <div className='App'>
+    <Router>
+    
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path ='/Detail/:id' element={<Detail/>}/>
+      </Routes >
+      </Router> 
     </div>
+    
   );
 }
 

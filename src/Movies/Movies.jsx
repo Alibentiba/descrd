@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Movies.css"
+import "./Mov.css"
 import Caegory from '../Ctegory/Caegory'
 import {useSelector} from 'react-redux'
 // import Caegory from '../Ctegory/Caegory' 
@@ -15,10 +15,19 @@ const Movies = () => {
 
   return (
    <div className='Movies'>
-  <Caegory Cat={recommende}/>
+     <h1>recommende:</h1>
+    <Caegory Cat={recommende}/>
+  <h1>recommende:</h1>
+
   <Caegory Cat={original}/>
+  <h1>recommende:</h1>
+
   <Caegory Cat={trending}/>
+  <h1>recommende:</h1>
+
   <Caegory Cat={original}/>
+  <h1>recommende:</h1>
+
   <Caegory Cat={news}/>
     </div>)}
 
