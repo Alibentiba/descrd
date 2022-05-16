@@ -12,7 +12,7 @@ const Login = () => {
             <img className='CTALogoOne'  src={logo} alt="fhfg" />
             <div className='SignUp'>GET ALL THERE</div>
             <  div className='Description' >
-              Get Premier Access to Raya and the Last Dragon for an additional fee
+              Ge t Premier Access to Raya and the Last Dragon for an additional fee
               with a Disney+ subscription. As of 03/26/21, the price of Disney+
               and The Disney Bundle will increase by $1.
             </div>

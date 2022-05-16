@@ -1,5 +1,5 @@
 import './App.css';
-import Nvabar from './Navbar/Nvabar';
+import Navbar from './Navbar/Navbar';
 import Home from "./Home/Home.jsx"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -12,6 +12,7 @@ import { addmovies,addrecommend,addtrending, addoriginal, addnews } from './Slic
 import { collection,getDocs,getFirestore } from "firebase/firestore";
 import { useDispatch } from 'react-redux'
 import { Detail } from './Detail/Detail';
+import Login from './Loging/Login';
 function App() {
   const dispatch =useDispatch()
   const db =getFirestore()
@@ -60,6 +61,7 @@ function App() {
     
       <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/Login' element={<Login/>}/>
       <Route path ='/Detail/:id' element={<Detail/>}/>
       </Routes >
       </Router> 

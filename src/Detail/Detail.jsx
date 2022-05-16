@@ -2,8 +2,7 @@ import React from 'react'
 import "./Detail.css"
 import { FaPlay,FaPlusCircle } from "react-icons/fa";
 import {RiGroup2Fill } from "react-icons/ri";
-import Navbar from '../Navbar/Nvabar';
-import test from "./test.png"
+import Navbar from '../Navbar/Navbar';
 import { useSelector } from 'react-redux';
 export const Detail = () => {
 
