@@ -46,25 +46,24 @@ width: 130px;
 height: 45px;
 text-align: center;
 cursor: pointer;
-border:  rgb(255, 0, 0) solid 2.6px;
+border:none;
 outline: none;
-color: rgb(255, 255, 255);
-background:rgb(0, 0, 0);
+color: black;
+background:rgba(255, 255, 255, 0);
 border-radius: 5px;
 font-weight: 500;
 font-size: 18px;
 display: flex;
 align-items: center;
 justify-content: center;
-opacity: 0.6;
 
+border: solid 2px rgb(94, 94, 94);
 
 }
 .button1:hover{
-background:rgb(255, 255, 255);
-opacity: 1;
-color: black;
-z-index: 1;
+background:bisque;
+color:black;
+transform: scale(1.05);
 border: none;
 
 }
@@ -79,7 +78,6 @@ border: none;
 width: 45px;
 height:45px;
 border-radius: 50%;
-/* border:  rgb(255, 255, 255) solid 2px; */
 background: black;
 cursor: pointer;
 color: rgb(255, 255, 255);
@@ -90,10 +88,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 opacity: 0.6;
-border:  rgb(255, 0, 0) solid 2.6px;
-
-
+border:  rgb(77, 77, 77) solid 2.6px;
 }
+
 .traille{
     width: 180px;
 }

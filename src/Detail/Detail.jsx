@@ -2,7 +2,7 @@ import React from 'react'
 import "./Detail.css"
 import { FaPlay,FaPlusCircle } from "react-icons/fa";
 import {RiGroup2Fill } from "react-icons/ri";
-
+import Navbar from '../Navbar/Nvabar';
 import test from "./test.png"
 import { useSelector } from 'react-redux';
 export const Detail = () => {
@@ -11,6 +11,7 @@ export const Detail = () => {
 
   return (
     <div className='Container'>
+      <Navbar/>
       <div className='Container-image'>
       <img alt={Detailsmov.title} src={Detailsmov.backgroundImg} />
       </div>
