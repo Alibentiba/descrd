@@ -1,51 +1,93 @@
-.Navbar{
-    height: 70px;
-    width: 100%;
-    display: flex;
-    background-color: black;
-    /* margin-top: 0px; */
+/* *,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
 }
-.Navbar-logo{
-    width: 10%;
-    height: 70px; 
+html {
+  font-size: 62.5%;
 }
-.Navbar-logo img{
-    width: 150px;
-    height: 70px;
-    object-fit: contain;
+body {
+  font-size: 1.6rem;
+} */
+li {
+  list-style: none;
 }
-.Navbar-Navigation{
-width: 80%;
-/* color: aliceblue; */
+a {
+  text-decoration: none;
+  color: rgb(204, 204, 204);
+}
+nav{
+
 display: flex;
-flex-direction: row;
-justify-content:flex-start;
 align-items: center;
-gap: 5%;
+justify-content: space-around;
+background-color: rgb(69, 28, 218);
+height: 8vh;
+width: 100%;
+z-index: 900;
+}
+.brand{
+    text-transform: uppercase;
+    font-weight: bold;
 
 }
-.Navbar-Navigation a{
-    color: aliceblue;
-    font-weight: 500;
-    text-decoration: none;
+.nav-menu{
+display: flex;
+align-items: center;
+justify-content: space-around;
+gap: 3rem;
+
+}
+.nav__toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(204, 204, 204);
+    transition: 0.1s ease-in;
+  }
+  .nav__toggler{
+      display: none;
+      cursor: pointer;
+  }
+  @media only screen and (max-width: 500px) {
+    .nav__toggler  {
+        display: block;    
+    }
+    .nav-menu{
+    position: fixed;
+    top: 8%;
+    right: 0%;
+    width: 50%;
+    height: 92%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
     display: flex;
-    gap:5px;
-}
+    background-color: rgb(69, 28, 218);
+    padding-top: 50px;
+    gap: 70px;
+    
+    /* border: solid 2px brown; */
+    transform: translateX(100%);
+    }
 
-.Navbr-userimage{
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px;
-    height: 100%;
-    object-fit: contain;
-}
-.Navbr-userimage img{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-}
+    .nav-active{
+    transform: translateX(0%);
+    transition: 0.5s;
+    transition-delay: 0.5s;}
+  }
+  .toglle .line1{
 
+transform: rotate(-45deg) translate(-4px,5px);
+  }
+  .toglle .line2{
+opacity: 0;
+    
+  }
+  .toglle .line3{
+    transform: rotate(45deg) translate(-4px,-5px);
+    
+  }
 
  

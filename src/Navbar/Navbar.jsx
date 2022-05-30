@@ -14,7 +14,12 @@ import {adduser} from '../Slice'
 
 const Navbar = () => {
  
-
+  const[active,setactive]=useState('nav-menu')
+  const[activetoglle,setactivetoglle]=useState('nav__toggler')
+  const toggle=()=>{
+active==='nav-menu'? setactive('nav-menu nav-active'):setactive('nav-menu');
+activetoglle==='nav__toggler'? setactivetoglle('nav__toggler toglle'):setactivetoglle('nav__toggler');
+  }
 const [userinfo,setuser]=useState([])
   const dispatch =useDispatch()
 
@@ -32,10 +37,10 @@ const [userinfo,setuser]=useState([])
 
           const usr= useSelector(state=>state.userstore.user)
   return (
-<div className='Navbar'>
+<nav className='navbar'>
 
 
-  <div className='Navbar-logo'>
+  {/* <div className='Navbar-logo'>
       <img src={Logo} alt="Logo"  className='Navbar-logo-img'/>
   </div>
 
@@ -52,10 +57,32 @@ const [userinfo,setuser]=useState([])
   <div className='Navbr-userimage'>
   <img src={usr.photoUR} alt="Logo"  className='Navbar-logo-img'onClick={handleAuth}/>
 
-  </div>
+  </div> */}
 
 
-  </div>
+
+
+    <a href="" className='brand'>brand</a>
+        <ul className={active}>
+       <li className='nav-i'><a href="" className='nav-link'>Home</a></li> 
+       <li className='nav-i'><a href="" className='nav-link'>Produt</a></li> 
+       <li className='nav-i'><a href="" className='nav-link'>Navigation</a></li> 
+       <li className='nav-i'><a href="" className='nav-link'>deconcter</a></li> 
+        </ul>
+      <div className={activetoglle} onClick={toggle}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
+      </div>
+   </nav>
+
+ 
+
+
+
+
+
+
   )
 }
 
