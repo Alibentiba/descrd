@@ -14,8 +14,8 @@ const Home = ()=>{
   return (
     <div className='Home'>
   <Navbar/>
-  <Sliderhome/>
-  <Vieweres/>
+  {/* <Sliderhome/> */}
+  {/* <Vieweres/> */}
   <Movies/>
   {/* <Login/> */}
   </div>

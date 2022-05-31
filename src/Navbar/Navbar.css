@@ -17,15 +17,14 @@ a {
   text-decoration: none;
   color: rgb(204, 204, 204);
 }
-nav{
 
+nav{
 display: flex;
 align-items: center;
 justify-content: space-around;
 background-color: rgb(69, 28, 218);
 height: 8vh;
 width: 100%;
-z-index: 900;
 }
 .brand{
     text-transform: uppercase;
@@ -45,37 +44,45 @@ gap: 3rem;
     margin: 0.4rem;
     background: rgb(204, 204, 204);
     transition: 0.1s ease-in;
+    
   }
+  
   .nav__toggler{
       display: none;
       cursor: pointer;
   }
   @media only screen and (max-width: 500px) {
-    .nav__toggler  {
+    .nav__toggler{
         display: block;    
     }
+
+nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
     .nav-menu{
     position: fixed;
-    top: 8%;
-    right: 0%;
-    width: 50%;
-    height: 92%;
+    top: 2%;
+    left: 0%;
+    width: 10%;
+    height:800px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     display: flex;
-    background-color: rgb(69, 28, 218);
     padding-top: 50px;
     gap: 70px;
-    
-    /* border: solid 2px brown; */
-    transform: translateX(100%);
+    background-color: black;
+    transform: translateX(-100%);
+    z-index: 1000;
     }
 
     .nav-active{
     transform: translateX(0%);
     transition: 0.5s;
-    transition-delay: 0.5s;}
+    transition-delay: 0.3s;}
   }
   .toglle .line1{
 

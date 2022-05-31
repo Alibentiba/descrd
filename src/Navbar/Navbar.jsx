@@ -17,8 +17,8 @@ const Navbar = () => {
   const[active,setactive]=useState('nav-menu')
   const[activetoglle,setactivetoglle]=useState('nav__toggler')
   const toggle=()=>{
-active==='nav-menu'? setactive('nav-menu nav-active'):setactive('nav-menu');
-activetoglle==='nav__toggler'? setactivetoglle('nav__toggler toglle'):setactivetoglle('nav__toggler');
+active==='nav-menu' ? setactive('nav-menu nav-active'):setactive('nav-menu');
+activetoglle==='nav__toggler' ? setactivetoglle('nav__toggler toglle'):setactivetoglle('nav__toggler');
   }
 const [userinfo,setuser]=useState([])
   const dispatch =useDispatch()
